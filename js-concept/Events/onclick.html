@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event </title>
+    <link rel="stylesheet" href="onclick.css">
+</head>
+<body>
+    <h1 class="showHiddenName"> Nayani</h1>
+    <!-- <button onclick="hideName()">HideName</button>
+    <button onclick="myFunction()">Click me</button> -->
+   <!--  <h1 class="showhideItems" ">Car</h1> -->
+   <!-- <button onmouseout="hideItems()" onmouseover="showItems()>mousekey</button> -->
+    <button onclick="showName()">show/hide</button>
+    <button onmouseout="showItems()" onmouseover="displayover()">mouse</button>
+    <label>Price:</label>
+    <input type="text" value="" id="price" onkeydown="getPrice()" onmouseup="showPrice()"/>
+    <div id="priceValue"></div>
+    <button id="clickEvent">click</button>
+    <input type="text" id="nameValue">
+    <input type="checkbox" id="checkValue">
+    <button id="date" >Show time?</button>
+    <script src="onclick.js"></script>
+</body>
+</html>

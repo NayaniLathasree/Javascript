@@ -1,0 +1,5 @@
+#emptyUsername, #invalidUsername  {
+    display: none;
+    color: red;
+}
+

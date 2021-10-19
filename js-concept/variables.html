@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name="Latha";
+        // age=22;
+        // var isMarried=false;
+        // console.log("name :" + name);
+        // console.log("age :" + age);
+        // console.log("Is Married :" + isMarried);
+        // var x;
+        // console.log("x " + x);
+        // var y = null;
+        // console.log("y : " + y);
+        var person= {
+            firstName : "Lathasree",
+            lastName : "Nayani",
+            age: 22,
+        fullName: function(){
+        return this.firstName +' '+ this.lastName;
+        }
+        }
+        console.log('First Name: ' +person.firstName);
+        console.log('Last Name: ' +person.lastName);
+        console.log('Age :' +person.age);
+        var fullName = person.fullName();
+        console.log('Full name:' +fullName);
+
+        console.log("=======================Second Way to print object ==============");
+        console.log('First Name: ' +person["firstName"]);
+        console.log('Last Name: ' +person["lastName"]);
+        console.log('Age :' +person["age"]);
+        var fullName = person["fullName"]();
+        console.log('Full name:' +fullName);
+    console.log("======================================");
+        var car = new Object()
+        car.name ="BMW";
+        car.color ="red";
+        car.price = 1600000.09;
+        console.log('Name: ' +car.name);
+        console.log('Color: ' +car.color);
+        console.log('Price: ' +car.price);
+
+    </script>
+</body>
+</html>

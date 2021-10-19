@@ -1,0 +1,45 @@
+.thumbnail{
+margin-bottom:0;
+border:0;
+}
+.row_style{
+margin-top:100px;
+margin-bottom:50px;
+}
+.row_style1{
+margin-top:100px;
+margin-bottom:33px;
+}
+.row_style2{
+margin-top:100px;
+margin-bottom:200px;
+}
+.img1{
+height:380px;
+width:Auto;
+display: block;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+footer {
+    position: relative;
+    background-color: #3d3d3d;
+    color:white;
+    width: 100%;
+    bottom: 0;
+    font-weight: 200;
+}
+.columnf{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+
+}
+
+
+.red{
+    color:red;
+}

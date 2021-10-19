@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        body{
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    </style>
+
+</head>
+<body>
+    <form name="userForm">
+        <div>
+            <input type="text" 
+            name="username" 
+            placeholder="Enter UserName">
+            <p id="emptyUsername">Please enter username</p>
+            <p id="invalidUsername">Please enter a valid username, only characters are allowed</p>
+        </div>
+        <br>
+        <div>
+            <input type="text" 
+            name="password" 
+            placeholder="Enter Password">
+            <p id="emptyPassword">Please enter password</p>
+            <p id="invalidPassword">Please enter a valid password, should contain atleast 1 uppercase, 1 lowercase, 1 number and atleast 8 characters</p>
+        </div>
+        <br>
+        <div>
+            <button
+             id='login'   
+             type="button">
+             Login
+            </button>
+        </div>
+    </form>
+        
+    <script src="form.js"></script>
+</body>
+</html>
