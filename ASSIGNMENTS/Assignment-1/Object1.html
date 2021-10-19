@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects without new keyword</title>
+</head>
+<body>
+    <script>
+      const jspider ={
+          trainer: "shashi",
+          course : "Mern stack",
+          duration : "4 Months",
+          details: function()
+          {
+                    return this.trainer+'  '+  this.course +'  '+ this.duration;
+        }
+      };
+      const coursejspiderdetails = jspider.details();
+        console.log('course Details: '+  coursejspiderdetails);
+      console.log("=====================2 obj========================")
+      const jspider1 ={
+          trainer: "Varun",
+          course : "SQL",
+          duration : "1 Months",
+          detail: function()
+          {
+                    return this.trainer+'  '+ this.course +'  '+ this.duration;
+        }
+      };
+      const coursejspidesDetail = jspider1.detail();
+    console.log('course Details: '+coursejspidesDetail );
+      console.log("=====================3 obj========================")
+      const jspider2 ={
+          trainer: "Shashira",
+          course : "Java",
+          duration : "3 Months",
+      }
+          let details={
+                  getdetail: function()
+                    {
+                    // return this.trainer+'  '+ this.course +'  '+ this.duration;
+                    console.log(`trainer - ${this.trainer}  Course - ${this.course} Duration - ${this.duration} `);
+                    }
+
+            };
+      const courseJspide3Details = jspider2.getdetail();
+    console.log("=====================4 obj========================")
+      const jspider3 ={
+          trainer: "Ragu",
+          course : "Programming",
+          duration : "1 Months",
+         /*  getdetails: function()
+          {
+                 
+            console.log(`trainer - ${this.trainer}  Course - ${this.course} Duration - ${this.duration} `);
+        } */
+      };
+    jspider3.getdetails();
+    console.log("=====================4 obj========================")
+      const jspider4 ={
+          trainer: "Shambu Kumar",
+          course : "Aptitude",
+          duration : "1 Months",
+          fulldetails: function()
+          {
+                    return this.trainer+'  '+ this.course +'  '+ this.duration;
+        }
+      };
+      const coursejspider4detail = jspider4.fulldetails();
+    console.log('course Details": '+coursejspider4detail);
+
+     
+
+     
+</script>
+</body>
+</html>

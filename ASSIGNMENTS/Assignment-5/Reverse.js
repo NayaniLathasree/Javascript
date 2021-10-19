@@ -1,0 +1,21 @@
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const reverseFruits=fruits.reverse();
+console.log('reverseFruits', reverseFruits);
+console.log("------------------------------------");
+const a = [1, 2, 3];
+console.log('Before ',a); 
+a.reverse();
+console.log('After',a); 
+console.log("---------------------------------");
+var arr=["AngulaJS","Node.js","Javascript"];  
+var rev=arr.reverse();  
+console.log('After - ',rev);
+
+console.log("---------------------------------");
+var array1=[1,2,"Node.js",false,true,"Javascript"];  
+var reverse=array1.reverse();  
+console.log('After - ',reverse);
+console.log("---------------------------------");
+var boolean =[false,true,false,1,3];  
+var reversearray=boolean.reverse();  
+console.log('After - ',reversearray);

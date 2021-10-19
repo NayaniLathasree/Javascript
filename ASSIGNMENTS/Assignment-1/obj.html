@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects with new keyword</title>
+</head>
+<body>
+    <script>
+       const java = new Object()
+        java.trainername ="shashi";
+        java.course ="Java ";
+        java.duration ="3 Months";
+        java.JavaCourse= function(){
+            return java.trainername +'  '+ java.course +'  '+ java.duration;
+        }
+        const javaDetails = java.JavaCourse();
+        console.log("Full Details :"+javaDetails )
+        console.log('Name: ' +java.trainername);
+        console.log('Course: ' +java.course);
+        console.log('Duration: ' +java.duration);
+        console.log("================2 obj=============")
+        const Sql = new Object()
+        Sql.trainername ="Varun";
+        Sql.course ="SQL ";
+        Sql.duration ="1 Months";
+          Sql.SqlCourse= function(){
+            return Sql.trainername +'  '+ Sql.course +'  '+ Sql.duration;
+        }
+        const SqlDetails = Sql.SqlCourse();
+        console.log("Full Details :"+SqlDetails)
+        console.log('Name: ' +Sql.trainername);
+        console.log('Course: ' +Sql.course);
+        console.log('Duration: ' +Sql.duration);
+        console.log("=============3 obj==================")
+        const Python = new Object()
+        Python.trainername ="Ravi Kumar";
+        Python.course ="Python";
+        Python.duration ="1 Months";
+        Python.PythonCourse= function(){
+            return Python.trainername +'  '+ Python.course +'  '+ Python.duration;
+        }
+        const pythonDetails = Python.PythonCourse();
+        console.log("Full Details :"+pythonDetails)
+        console.log('Name: ' +Python.trainername);
+        console.log('Course: ' +Python.course);
+        console.log('Duration: ' +Python.duration);
+        console.log("=============4 obj ==================")
+        const Mern = new Object()
+        Mern.duration ="4 Months";
+        Mern.trainername ="Shashi";
+        Mern.course ="Mern Stack ";
+        Mern.MernCourse= function(){
+            return Mern.trainername +'  '+ Mern.course +'  '+ Mern.duration;
+        }
+        const  mernDetails= Mern.MernCourse();
+        console.log("Full Details :"+mernDetails)
+        console.log('Name: ' +Mern.trainername);
+        console.log('Course: ' +Mern.course);
+        console.log('Duration: ' +Mern.duration);
+        console.log("============= 5 obj ==================")
+        const React = new Object()
+        React.trainername ="Shashi";
+        React.course ="Mern Stack ";
+        React.duration ="4 Months";
+        React.ReactCourse= function(){
+            return React.trainername +'  '+React.course +'  '+React.duration;
+        }
+        const  reactDetails= React.ReactCourse();
+        console.log("Full Details :"+reactDetails)
+        console.log('Name: ' +React.trainername);
+        console.log('Course: ' +React.course);
+        console.log('Duration: ' +React.duration);
+    </script>
+</body>
+</html>

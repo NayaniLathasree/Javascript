@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+<form name="Form" onsubmit ="return validateForm()">
+        <h2>Registeration Form</h2>
+        <div class="box">
+            <label>Name</label> 
+            <input type="text" name="name" id="name" value=""> 
+            <div class="error" id="nameError"></div>
+        </div>
+        <div class="box"> 
+            <label>Age</label> 
+            <input type="text" name="age" id="Age">
+            <div class="error" id="ageError"></div>
+        </div>
+        <div class="box">
+            <label>Mobile Phone</label> 
+            <input type="number" name="mobile" id="mobile" maxlength="10">
+            <div class="error" id="mobileError"></div>
+        </div>
+        <div class="box">
+            <label>Email</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailError"></div>
+        </div>
+        <div class="box">
+            <label>Password</label>
+            <input type="text" name="password" id="password">
+            <div class="error" id="PasswordError"></div>
+        </div>
+        <div class="box">
+            <label>Gender</label>
+            <div class="form-inline" id="gender">
+           <label> <input type="radio" name="gender" id="gender">Male</label>
+           <label> <input type="radio" name="gender" id="gender">Female</label>
+             </div>
+            <div class="error" id="genderError"></div>
+        </div>
+
+        <div class="box">
+            <label>Subject</label>
+            <input type="checkbox" name="subject" id="subject">Maths
+            <input type="checkbox" name="subject" id="subject">English
+            <input type="checkbox" name="subject" id="subject">Hindi
+            <input type="checkbox" name="subject"id="subject">Science
+            <input type="checkbox" name="subject" id="subject">Social
+            <div class="error" id="subjectError"></div>
+        </div>
+        
+        <div class="box">
+            <label>Country</label>
+            <select name="country" id="country"> 
+                <option>Choose</option>o
+                <option>Banglore</option>l
+                <option>Chennai </option>
+                <option>Hyderabad</option>lo
+                <option>Mumbai</option>
+            </select>
+            <div class="error" id="countryError"></div>
+        </div>
+        <div class="box">
+           
+            <label><input type="checkbox" id="condition" class="condition">Agree term and conditions 
+            </label> <br>
+            <div class="error" id="subjectError"></div>
+        </div>
+        <div class="box">
+            <button id="submit" class="submit">Submit</button>
+            <div class="error" id="submitError"></div>
+        </div>
+
+</form>    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="validation.js"></script>
+     -->
+     <script src="valid.js"></script>
+</body>
+</html>
